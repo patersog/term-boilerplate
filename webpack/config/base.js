@@ -7,7 +7,7 @@ const baseConfig = {
     publicPath: resolve(__dirname, '..', '..', 'build'),
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.css'],
+    extensions: ['.ts', '.tsx', '.js', '.css' ,'.jsx'],
   },
   module: { rules: require('../loaders') },
 }

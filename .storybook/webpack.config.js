@@ -1,7 +1,8 @@
 const { resolve } = require('path');
 
-// const webpack = require('../node_modules/@storybook/core/node_modules/webpack');
-// this require statement for the peer dependecy is only a fix (https://github.com/storybooks/storybook/issues/3044)
+// As of the time, Tuesday 9:20 AM 10/30/2018
+// There is an issue with install storybook and webpack through npm, (https://github.com/storybooks/storybook/issues/3044)
+// Therefore the package manager has been changed to yarn
 
 /** 
  * Because the peer dependency of Storybook is different from that of our version of webpack,
@@ -15,6 +16,7 @@ const sbConfig = {
       {
         test: /\.t(s|sx)$/,
         loader: 'ts-loader',
+        exclude: /node_modules/,
         options: {
           configFile: resolve(__dirname, '..', 'tsconfig.json'),
         },

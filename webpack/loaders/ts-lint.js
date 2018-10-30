@@ -1,7 +1,7 @@
 const { resolve } = require('path');
 
 module.exports = {
-  test: /\.(ts|tsx)$/,
+  test: /\.tsx?$/,
   enforce: 'pre',
   use: [
     {

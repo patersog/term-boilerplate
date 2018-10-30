@@ -1,11 +1,12 @@
 {
-  "name": "ts-react-express-boilerplate",
+  "name": "term-boilerplate-storybook",
   "version": "1.0.0",
-  "description": "A boilerplate project for a fullstack (TERM) application",
+  "description": "A boilerplate project for a fullstack (TERM) application, with storybook",
   "main": "app/src/index.ts",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build": "webpack --config ./webpack/webpack.config.js"
+    "build": "webpack --config ./webpack/webpack.config.js",
+    "clean": "rm -rf ./node_modules && yarn"
   },
   "keywords": [
     "typescript",
@@ -15,8 +16,8 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@storybook/addon-actions": "^3.4.11",
-    "@storybook/react": "^3.4.11",
+    "@storybook/addon-actions": "^4.0.0",
+    "@storybook/react": "^4.0.0",
     "@types/connect-mongo": "0.0.39",
     "@types/cors": "^2.8.4",
     "@types/dotenv": "^4.0.3",

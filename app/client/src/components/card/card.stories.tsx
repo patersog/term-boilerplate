@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import * as React from 'react';
+// import { storiesOf } from '@storybook/react';
+const sbr = require('@storybook/react');
 
 import { Card } from './card.component';
 
@@ -9,7 +9,7 @@ const cardProps = {
   description: 'This is a simple test description'
 };
 
-storiesOf('Card', module)
+sbr.storiesOf('Card', module)
   .add('default', () => (
     <Card {...cardProps} />
   ));

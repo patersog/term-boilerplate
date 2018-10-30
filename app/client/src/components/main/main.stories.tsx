@@ -1,10 +1,10 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import * as React from 'react';
+// import * as storybook__react from '@storybook/react';
+const sbr = require('@storybook/react');
 
 import { Main } from './main.component';
 
-storiesOf('Main', module)
+sbr.storiesOf('Main', module)
   .add('default', () => (
     <Main />
   ));

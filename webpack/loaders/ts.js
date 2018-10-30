@@ -1,4 +1,6 @@
 module.exports = {
-  test: /\.t(s|sx)$/,
-  loaders: ['ts-loader']
+  test: /\.tsx?$/,
+  loader: 'ts-loader',
+  exclude: /node_modules/,
+  options: { reportFiles: ['src/**/*.{ts,tsx}']}
 }
