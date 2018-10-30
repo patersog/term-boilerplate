@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "strict": true,
+    "allowJs": true,
+    "outDir": "build",
+    "noLib": false,
+    "strictFunctionTypes": false,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "jsx": "react"
+  },
+  "include": [
+    "./*.ts",
+    "./app/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+  ],
+  "compileOnSave": false
+}
